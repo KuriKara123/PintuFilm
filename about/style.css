@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+#menuLogo img {
+    height: auto;
+    width: 150px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: hsl(0, 0%, 5%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: hsl(0, 0%, 5%);
+}
+
+#res {
+    flex: 1;
+    z-index: 1;
+    display: flex;
+}
+
+#menuLogo {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#menu {
+    display: none;
+    width: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#logo {
+    width: 10rem;
+}
+
+#navigate {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#navigate > div {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+#active {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+#navigate > div > .hover {
+    width: 0;
+    height: 2px;
+    transition: 0.5s;
+}
+
+#navigate > div:hover .hover {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+#profile {
+    padding: 0 1rem;
+}
+
+#profile img {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.abouthead {
+    padding: 40px 100px;
+    color: white;
+}
+
+.abouthead h2 {
+    padding-top: 10px;
+    color: #fd4b6b;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.abouthead p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.faq {
+    background-color: hsl(0, 0%, 5%);
+    padding: 30px;
+    margin-top: 5px;
+  }
+  
+.faq h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+  
+.faq ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.faq li {
+    margin-bottom: 20px;
+}
+  
+.faq details {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    height: auto;
+    transition: height 0.3s ease-in-out;
+    cursor: pointer;
+}
+  
+.faq summary {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ddd;
+    margin-bottom: 5px;
+}
+  
+.faq summary::marker {
+    display: none;
+}
+  
+.faq details:open {
+    background-color: #333;
+    
+}
+  
+.faq p {
+    font-size: 16px;
+    color: #ddd;
+    margin-top: 0;
+}
+  
+  
+
+#visit-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 80px;
+}
+
+#visit-details .details {
+    width: 40%;
+}
+
+#visit-details .details span, 
+#form-details form span {
+    font-size: 52px;
+    color: #fd4b6b;
+    font-weight: bold;
+}
+
+#visit-details .details h2, 
+#form-details form h2 {
+    color: azure;
+    font-size: 34px;
+    padding: 20px 0;
+}
+
+#visit-details .details h3 {
+    font-size: 30px;
+    color: azure;
+    padding-bottom: 15px;
+}
+
+#visit-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    color: azure;
+    font-style: italic;
+}
+
+#visit-details .details p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#visit-details .details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#visit-details .details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.plan-pricing-title{
+    color: #fd4b6b;
+}
+
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    
+}
+
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input, #form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+
+#form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 200px;
+}
+
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+    color: azure;
+}
+
+#form-details .people div span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fd4b6b;
+}
+
+#createAccount {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.relative {
+    position: relative;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+#justify {
+    justify-content: space-between;
+}
+
+select {
+    padding: 0.2rem;
+    background: none;
+    color: white;
+    border: white solid 1px;
+    outline: none;
+}
+
+select option {
+    background-color: hsl(0, 0%, 5%);
+}
+
+.relative input,
+.relative textarea {
+    outline: none;
+    color: white;
+    border: solid white 1px;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 600px; 
+    background-color: hsl(0, 0%, 5%);
+}
+
+.relative label {
+    background-color: hsl(0, 0%, 5%);
+    position: absolute;
+    top: 0.3rem;
+    left: 0.5rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.relative input:focus ~ label,
+.relative input:not(:placeholder-shown) ~ label,
+.relative textarea:focus ~ label,
+.relative textarea:not(:placeholder-shown) ~ label {
+    top: -0.5rem;
+    font-size: 0.7rem;
+    
+}
+
+.relative textarea {
+    resize: none;
+    height: 150px;
+}
+
+
+.buttons1{
+    background-color: #fd4b6b;
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 6px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-right: 10px;
+}
+
+.buttons1:hover {
+    background-color: white;
+    color: hsl(0, 0%, 5%);
+}
+
+#res {
+    flex: 1;
+    z-index: 1;
+    display: flex;
+}
+
+#menuLogo {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#menu {
+    display: none;
+    width: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#logo {
+    width: 10rem;
+}
+
+#navigate {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#navigate > div {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+#active {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+#navigate > div > .hover {
+    width: 0;
+    height: 2px;
+    transition: 0.5s;
+}
+
+#navigate > div:hover .hover {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+#profile {
+    padding: 0 1rem;
+}
+
+#profile img {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+
+.closeButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeButton img {
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.margin {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.playDownloadButton {
+    display: flex;
+    justify-content: center;
+}
+
+.playDownloadButton div {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    background-color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+#footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#footer img {
+    width: 1.5rem;
+    
+}
+
+@media (max-width: 768px) {
+    #menu {display: block;}
+    #navigate {display: none;}
+    #profile {margin-left: auto;}
+    #navigate > div {margin: 0;}
+    #navigate > div > div {display: none;}
+}
+
+@media (max-width: 768px){
+    #responsive {
+        height: 100vh;
+        background-color: hsl(0, 0%, 5%);
+    }
+
+    #responsive #navigate {
+        display: flex;
+        align-items: normal;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #responsive #navigate a{
+        display: block;
+        width: calc(100% - 2rem);
+        margin: 0;
+        padding: 0.5rem 1rem;
+        background: none;
+    }
+
+    #responsive #navigate a:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
+#client-reviews {
+    padding: 2rem;
+    text-align: center;
+    color: hsl(0, 0%, 95%);
+}
+
+.reviews-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.reviews-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reviewer-profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.reviewer-img {
+    width: 75px; 
+    height: 75px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid white; 
+}
+
+.review-item {
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: hsl(0, 0%, 15%);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.review-text {
+    font-style: italic;
+    color: hsl(0, 0%, 85%);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+
+.client-name {
+    font-style: normal;
+    color: hsl(0, 0%, 75%);
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .reviews-container {
+        padding: 1rem;
+    }
+    .review-item {
+        margin-bottom: 1rem;
+    }
+}
+
+#plan-pricing {
+    padding: 2rem;
+    text-align: center;
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 5%);
+}
+
+.plan-pricing-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.plan-pricing-subtitle {
+    max-width: 800px;
+    margin: 1rem auto;
+    line-height: 1.5;
+    color: hsl(0, 0%, 75%);
+}
+
+.plan-image-container {
+    margin-top: 2rem;
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+}
+
+.plan-image {
+    max-width: 100%;
+    height: auto; 
+}
+
+
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center; 
+    gap: 2rem; 
+    padding: 0; 
+    list-style: none; 
+    margin-bottom: 1rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white; 
+}
+
+.footer-nav a:hover {
+    text-decoration: underline; 
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center; 
+    gap: 1rem; 
+    margin-top: 1rem; 
+}
+
+.footer-socials a {
+    display: inline-block;
+}
+
+.footer-socials img {
+    height: 24px; 
+    width: 24px;
+    vertical-align: middle; 
+}

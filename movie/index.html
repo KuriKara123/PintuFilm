@@ -1,0 +1,282 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>PintuFilm - Streaming all type of movies and series</title>
+</head>
+
+<body>
+    <nav>
+        <div id="res">
+            <div id="menuLogo">
+                <img src="../asset/pintu.png" id="logo" alt="JetFlix Logo"/>
+            </div>
+    
+            <div id="navigate">
+                <div>
+                    <a href="../movie/index.html">Movies</a>
+                    <div id="active"></div>
+                </div>
+                <div>
+                    <a href="../populaar/index.html">News & Popular</a>
+                    <div class="hover"></div>
+                </div>
+                <div>
+                    <a href="../about/index.html">About Us</a>
+                    <div class="hover"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="center" id="profile">
+            <!-- Load profile picture from localStorage -->
+            <img src="../asset/defaultpp1.png" id="profileImage" onclick="location.href='../profile/index.html'"/>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="content-container">
+            <div id="jumbotron">
+                <img src="../asset/jumbotronn.png"/>
+                <div>
+                    <div id="title">Avengers: Infinity War</div>
+                    <div id="synopsis">Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.</div>
+                    <div id="button" onclick="location.href='../detail/avengers.html'">Learn More</a></div>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title1">New Releases</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie1.jpg" alt="">
+                            <span class="movie-list-item-title">Inception</span>
+                            <p class="movie-list-item-desc">Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction.</p>
+                            <button class="movie-list-item-button" onclick="location.href='../detail/inception.html'">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie2.jpg" alt="">
+                            <span class="movie-list-item-title">Avengers</span>
+                            <p class="movie-list-item-desc">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos.</p>
+                            <button class="movie-list-item-button" onclick="location.href='../detail/avengers.html'">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie3.jpg" alt="">
+                            <span class="movie-list-item-title">John Wick: IV</span>
+                            <p class="movie-list-item-desc">John Wick now have a problem with Pablo, he has to fight for his family and his friends.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie4fix.png" alt="">
+                            <span class="movie-list-item-title">Shazam!</span>
+                            <p class="movie-list-item-desc">A normal kid suddenly struct by lightning and gains a super power. He called them Shazam!</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie5.jpg" alt="">
+                            <span class="movie-list-item-title">Pacific Rim</span>
+                            <p class="movie-list-item-desc">An uknown monsters called Kaijuu started attacking the world. Human make a giant robot called Pacific Rim.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie6replace.jpg" alt="">
+                            <span class="movie-list-item-title">1917</span>
+                            <p class="movie-list-item-desc">Back in the World War I, a man called Joseph fight for his family and achieving Victory for America.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie7.jpg" alt="">
+                            <span class="movie-list-item-title">Grown Ups 2</span>
+                            <p class="movie-list-item-desc">A bunch of men travelling around the world during holidays. And got some problems on it.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title2">Anime</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/anime1.jpg" alt="">
+                            <span class="movie-list-item-title">Your Name</span>
+                            <p class="movie-list-item-desc">Mitsuha Miyamizu is a high school student in the rural town of Itomori, Japan.</p>
+                            <button class="movie-list-item-button" onclick="location.href='../detail/yourname.html'">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/anime2.jpg" alt="">
+                            <span class="movie-list-item-title">JJK: 0</span>
+                            <p class="movie-list-item-desc">Back in the 2004, a student called Yuuta miss his childhood friend and become a socrerer.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/anime6.jpg" alt="">
+                            <span class="movie-list-item-title">DemonSlayer</span>
+                            <p class="movie-list-item-desc">Kamado Tanjirou trying to protect his sister from becoming an Oni and join the battle.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/anime4.jpg" alt="">
+                            <span class="movie-list-item-title">Kami game</span>
+                            <p class="movie-list-item-desc">Shirou was throw to another world and became a pro player in that world and start to conquer it.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/anime5.jpg" alt="">
+                            <span class="movie-list-item-title">Silent Voice</span>
+                            <p class="movie-list-item-desc">Mio is have a disability to hear, and falling in love with Kazuma whom have bullied her before.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/anime3.webp" alt="">
+                            <span class="movie-list-item-title">Violet</span>
+                            <p class="movie-list-item-desc">Violet Evergarden, a girl who was live in war era start to enjoying her daily life as a post girl.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/anime7.png" alt="">
+                            <span class="movie-list-item-title">Weather Girl</span>
+                            <p class="movie-list-item-desc">Suzune is a weather girl who can control rain in Japan. Many people hire her to control rain.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #000), url('../asset/jumbos2fix.jpg');">
+                <img class="featured-title" src="../asset/jumbos2title.png" alt="">
+                <p class="featured-desc">Tarzan a little boy that grown up with a group of monkeys like gorilla, orangutan, apes, simpansee. After grown up
+                    Tarzan have an issue with speaking, and badly he discovered by a explorer and taken to the Las vegas. Because of his handsome look. What Will
+                    happen next to Tarzan, we don't know.
+                </p>
+                <button class="featured-button">WATCH</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title3">Movies</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie22.jpg" alt="">
+                            <span class="movie-list-item-title">Oblivion</span>
+                            <p class="movie-list-item-desc">Setted in future world in 2945, where a Alien spaceship comes to conquer the earth civilization.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie21.jpg" alt="">
+                            <span class="movie-list-item-title">The Throne</span>
+                            <p class="movie-list-item-desc">The queen of Dragons start to conquer the world with her dragons army.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie23.jpg" alt="">
+                            <span class="movie-list-item-title">Hobbit</span>
+                            <p class="movie-list-item-desc">Dwarf is in danger of extinction because of Holy War. Paul a hero Dwarf start his adventure around.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/godzilla.jpg" alt="">
+                            <span class="movie-list-item-title">Godzilla</span>
+                            <p class="movie-list-item-desc">A monstrous Kaijuu called Godzilla is threatening human race. What will human do to encounter it.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/venom.webp" alt="">
+                            <span class="movie-list-item-title">Venom: 2</span>
+                            <p class="movie-list-item-desc">Venom and Eddie Brock meet Carnage, a red symbiote who is Venom's son. Will he can defeat it?</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/exorc.jpg" alt="">
+                            <span class="movie-list-item-title">Exorcist</span>
+                            <p class="movie-list-item-desc">A phenomenal exorcist by Pope Augustus back in 1923 is recreated into film. Story about devils.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/batman.jpg" alt="">
+                            <span class="movie-list-item-title">Batman</span>
+                            <p class="movie-list-item-desc">Once again batman will save Arkham City from his own hand and fight for justice.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title4">TV Series</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/mone.jpg" alt="">
+                            <span class="movie-list-item-title">Money Heist</span>
+                            <p class="movie-list-item-desc">A bunch of ex-workers tried to rob bank with a various strategy. We will see the unexpected strategy.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/movie24.png" alt="">
+                            <span class="movie-list-item-title">BreakingBad</span>
+                            <p class="movie-list-item-desc">A crazy man sentenced into prison becase killing people. An anonymous accident happen in the prison.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/witch.jpg" alt="">
+                            <span class="movie-list-item-title">The Witcher</span>
+                            <p class="movie-list-item-desc">Krane, a swordsman in his village suddenly meets a witch of Annerose that wanted for so long.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/cobra.avif" alt="">
+                            <span class="movie-list-item-title">Cobra Kai</span>
+                            <p class="movie-list-item-desc">A group of teens is interested in Kungfu. Start to take a serious path on kungfu path.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/wed.jpg" alt="">
+                            <span class="movie-list-item-title">Wednesday</span>
+                            <p class="movie-list-item-desc">Anne Wednesday just a regular teen who schools in Brooklyn, start experience irregular.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/cytb.jpg" alt="">
+                            <span class="movie-list-item-title">CyberPunk</span>
+                            <p class="movie-list-item-desc">Setted in 1000 years in future, where android technologies is advanced more and more.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../asset/alice.jpg" alt="">
+                            <span class="movie-list-item-title">Alice</span>
+                            <p class="movie-list-item-desc">Arisu is a normal Japanese man who loves playing game, suddenly he teleport into another world.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="../asset/pintu.png" alt="JetFlix Logo" class="footer-logo" />
+            <nav class="footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../movie/index.html">Movies</a>
+                <a href="../populaar/index.html">Popular</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="https://facebook.com" target="_blank"><img src="../asset/facebook.png" alt="Facebook"/></a>
+                <a href="https://twitter.com" target="_blank"><img src="../asset/twitter.png" alt="Twitter"/></a>
+                <a href="https://instagram.com" target="_blank"><img src="../asset/instagram.png" alt="Instagram"/></a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="resize()">
+    
+    <nav>
+        <div id="res">
+            <div id="menuLogo">
+                <img src="../asset/pintu.png" id="logo" alt="JetFlix Logo"/>
+            </div>
+    
+            <div id="navigate">
+                <div>
+                    <a href="../movie/index.html">Movies</a>
+                    <div class="hover"></div>
+                </div>
+                <div>
+                    <a href="../populaar/index.html">News & Popular</a>
+                    <div id="active"></div>
+                </div>
+                <div>
+                    <a href="../about/index.html">About Us</a>
+                    <div class="hover"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="center" id="profile">
+            <!-- Load profile picture from localStorage -->
+            <img src="../asset/defaultpp1.png" id="profileImage" onclick="location.href='../profile/index.html'"/>
+        </div>
+    </nav>
+
+    <section id="tranding">
+        <div class="container">
+          <h3 class="text-center section-subheading">- News & Popular -</h3>
+          <h1 class="text-center section-heading">Top 7 Movies List</h1>
+        </div>
+        <div class="container">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../asset/top1.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price" style="color: goldenrod;">1st</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      The Tank
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>5.0</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../asset/top2.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price" style="color: silver;">2nd</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Inception
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>5.0</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../asset/top3.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price" style="color: rgb(195, 128, 41);">3rd</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      John Wick: IV
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>5.0</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../asset/the-covenant.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">4th</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      The Covenant
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>5.0</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../asset/top5.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">5th</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Dune: part two
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>5.0</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../asset/top6.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">6th</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Top Gun Maverick
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>5.0</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../asset/top7.webp" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">7th</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Gran Turismo
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.9</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+            </div>
+  
+            <div class="tranding-slider-control">
+              <div class="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </div>
+              <div class="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+
+
+      <div class="circle">
+        <div class="earth" style="background-image: url('../asset/New-global-view.max-1000x1000.jpeg');">
+        </div>
+        <div class="content">
+            <div class="continents">
+                <div class="continent one">
+                    <a id="n-a" href="#north-america">North America</a>
+                </div>
+                <div class="continent two">
+                    <a id="s-a" href="#south-america">south America</a>
+                </div>
+                <div class="continent three">
+                    <a id="eur" href="#europe">Europe</a>
+                </div>
+                <div class="continent four">
+                    <a id="afr" href="#africa">Africa</a>
+                </div>
+                <div class="continent five">
+                    <a id="asi" href="#asia">Asia</a>
+                </div>
+                <div class="continent six">
+                    <a id="aus" href="#australia">Australia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="north-america" class="about">
+        <h1>North America's Top Movie</h1>
+        <img src="../asset/movie1.jpg" alt="">
+        <p>
+            Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable. Cobb's rare ability has made him a coveted 
+            player in this treacherous new world of corporate espionage, but it has also made him an international fugitive and cost him everything he has ever loved. Now Cobb is being offered a chance at redemption. One last job could give him his life back but only 
+            if he can accomplish the impossible, inception. Instead of the perfect heist, Cobb and his team of specialists have to pull off the reverse: their task is not to steal an idea, but to plant one.
+        </p>
+    </div>
+    <div id="south-america" class="about">
+        <h1>South America's Top Movie</h1>
+        <img src="../asset/movie4.jpg" alt="">
+        <p>
+            South America, fourth largest of the world’s continents. It is the southern portion of the landmass generally referred to as the New World, the Western Hemisphere, or simply the Americas. The continent is compact and roughly triangular in shape, being
+            broad in the north and tapering to a point—Cape Horn, Chile—in the south.South America is bounded by the Caribbean Sea to the northwest and north, the Atlantic Ocean to the northeast, east, and southeast, and the Pacific Ocean to the west.
+            In the northwest it is joined to North America by the Isthmus of Panama, a land bridge narrowing to about 50 miles (80 km) at one point. Drake Passage, south of Cape Horn, separates South America from Antarctica.
+        </p>
+    </div>
+    <div id="europe" class="about">
+        <h1>Europe's Top Movie</h1>
+        <img src="../asset/movie18.jpg" alt="">
+        <p>
+            Europe, second smallest of the world’s continents, composed of the westward-projecting peninsulas of Eurasia (the great landmass that it shares with Asia) and occupying nearly one-fifteenth of the world’s total land area. It is bordered on the north by
+            the Arctic Ocean, on the west by the Atlantic Ocean, and on the south (west to east) by the Mediterranean Sea, the Black Sea, the Kuma-Manych Depression, and the Caspian Sea. The continent’s eastern boundary (north to south) runs along the
+            Ural Mountains and then roughly southwest along the Emba (Zhem) River, terminating at the northern Caspian coast.
+        </p>
+    </div>
+    <div id="africa" class="about">
+        <h1>Africa's Top Movie</h1>
+        <img src="../asset/movie6.jpg" alt="">
+        <p>
+            Africa, the second largest continent (after Asia), covering about one-fifth of the total land surface of Earth. The continent is bounded on the west by the Atlantic Ocean, on the north by the Mediterranean Sea, on the east by the Red Sea and the Indian
+            Ocean, and on the south by the mingling waters of the Atlantic and Indian oceans.Africa’s total land area is approximately 11,724,000 square miles (30,365,000 square km), and the continent measures about 5,000 miles (8,000 km) from north to
+            south and about 4,600 miles (7,400 km) from east to west. Its northern extremity is Al-Ghīrān Point, near Al-Abyaḍ Point (Cape Blanc), Tunisia; its southern extremity is Cape Agulhas, South Africa; its farthest point east is Xaafuun (Hafun)
+            Point, near Cape Gwardafuy (Guardafui), Somalia; and its western extremity is Almadi Point (Pointe des Almadies), on Cape Verde (Cap Vert), Senegal. In the northeast, Africa was joined to Asia by the Sinai Peninsula until the construction
+            of the Suez Canal. Paradoxically, the coastline of Africa—18,950 miles (30,500 km) in length—is shorter than that of Europe, because there are few inlets and few large bays or gulfs.
+        </p>
+    </div>
+    <div id="asia" class="about">
+        <h1>Asia's Top Movie</h1>
+        <img src="../asset/movie3.jpg" alt="">
+        <p>
+            Asia, the world’s largest and most diverse continent. It occupies the eastern four-fifths of the giant Eurasian landmass. Asia is more a geographic term than a homogeneous continent, and the use of the term to describe such a vast area always carries
+            the potential of obscuring the enormous diversity among the regions it encompasses. Asia has both the highest and the lowest points on the surface of Earth, has the longest coastline of any continent, is subject overall to the world’s widest
+            climatic extremes, and, consequently, produces the most varied forms of vegetation and animal life on Earth. In addition, the peoples of Asia have established the broadest variety of human adaptation found on any of the continents.
+        </p>
+    </div>
+    <div id="australia" class="about">
+        <h1>Australia's Top Movie</h1>
+        <img src="../asset/movie7.jpg" alt="">
+        <p>
+            At about 3 million square miles (7.7 million square km), Australia is the smallest continent on Earth. In fact, it’s closer in size to Greenland than it is to South America. Does that make Australia an island like Greenland? Although Australia is sometimes
+            called an “island continent,” most geographers consider islands and continents to be separate things. According to Britannica, an island is a mass of land that is both “entirely surrounded by water” and also “smaller than a continent.” By
+            that definition, Australia can’t be an island because it’s already a continent.
+        </p>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="../asset/pintu.png" alt="JetFlix Logo" class="footer-logo" />
+            <nav class="footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../movie/index.html">Movies</a>
+                <a href="../populaar/index.html">Popular</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="https://facebook.com" target="_blank"><img src="../asset/facebook.png" alt="Facebook"/></a>
+                <a href="https://twitter.com" target="_blank"><img src="../asset/twitter.png" alt="Twitter"/></a>
+                <a href="https://instagram.com" target="_blank"><img src="../asset/instagram.png" alt="Instagram"/></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

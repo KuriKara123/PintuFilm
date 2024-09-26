@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="resize()" style="background: linear-gradient(to bottom, rgba(0,0,0,0), transparent), url('../asset/yournamebanner.jpg');">
+    
+    <div class="header">
+        <nav>
+            <div id="res">
+                <div id="menuLogo">
+                    <img src="../asset/pintu.png" id="logo" alt="JetFlix Logo"/>
+                </div>
+        
+                <div id="navigate">
+                    <div>
+                        <a href="../movie/index.html">Movies</a>
+                        <div class="hover"></div>
+                    </div>
+                    <div>
+                        <a href="../populaar/index.html">News & Popular</a>
+                        <div class="hover"></div>
+                    </div>
+                    <div>
+                        <a href="../about/index.html">About Us</a>
+                        <div class="hover"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="center" id="profile">
+                <!-- Load profile picture from localStorage -->
+                <img src="../asset/defaultpp1.png" id="profileImage" onclick="location.href='../profile/index.html'"/>
+            </div>
+        </nav>
+    </div>
+
+    <section>
+        <img src="../asset/yournametitle.png" alt="" style="width: 600px; height: 150px; position: absolute; left: 100px; top: 140px;">
+        <div class="content">
+            <div class="details">
+                <span>98% Match</span>
+                <span>2h 12m</span>
+                <span>13+</span>
+            </div>
+            <div class="button">
+                <span class="btn1">► Play</span>
+                <span class="btn2" onclick="openTrailer()">Trailer</span>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="trailer-popup" id="trailerPopup">
+        <div class="closeButton"><img src="../asset/close.png" onclick="closeTrailerPopup()"></div>
+        <div class="trailer-content">
+            <video controls src="../asset/yournametrailer.mp4" width="500"></video>
+        </div>
+    </div>
+
+    <div class="sec">
+        <div class="info">
+            <span class="title">Scenes</span>
+            <span class="btn3">Show More</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="../asset/yournamescene1.jpeg" alt="">
+            </div>
+            <div class="col">
+                <img src="../asset/yournamescene2.jpeg" alt="">
+            </div>
+            <div class="col">
+                <img src="../asset/yournamescene3.jpeg" alt="">
+            </div>
+            <div class="col">
+                <img src="../asset/yournamescene4.jpeg" alt="">
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col1 col">
+                <h2>Overview</h2>
+                <p>Mitsuha Miyamizu is a high school student in the rural town of Itomori, Japan. Bored of the town, she wishes to be a Tokyo boy in her next life. Soon, she begins to intermittently switch bodies with Taki Tachibana, a boy from Tokyo. On certain days, Taki and Mitsuha wake up in each other's bodies and must live the entire day as the other, reverting when they go to sleep at night. The two set up ground rules for sharing their bodies, communicating via messages on paper, their phones, and their skin. Mitsuha (in Taki's body) sets Taki up on a date with his coworker, Miki Okudera, while Taki (in Mitsuha's body) helps Mitsuha become more popular at school. While in Mitsuha's body, Taki accompanies Mitsuha's grandmother Hitoha and younger sister Yotsuha to the Shinto shrine on a mountain near Itomori, leaving an offering of kuchikamizake made with Mitsuha's saliva.</p>
+            </div>
+            <div class="col2 col">
+                <h2>Genres</h2>
+                <p>Anime Movies</p>
+                <p>Japan's Movies</p>
+                <p>Fantasy & Romance</p>
+            </div>
+        </div>
+        <div class="row3">
+            <h2>Cast</h2>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/yournamecrew1.jpeg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Ryunosuke Kamiki</h5>
+                    <h6>Taki Tachibana</h6>
+                </div>
+            </div>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/yournamecrew4.jpeg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Mone Kamishiraishi</h5>
+                    <h6>Mitsuha Miyamizu</h6>
+                </div>
+            </div>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/yournamecrew3.jpeg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Etsuko Ichihara</h5>
+                    <h6>Hitoha Miyamizu</h6>
+                </div>
+            </div>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/yournamecrew2.jpeg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Masami Nagasawa</h5>
+                    <h6>Miki Okudera</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="../asset/pintu.png" alt="JetFlix Logo" class="footer-logo" />
+            <nav class="footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../movie/index.html">Movies</a>
+                <a href="../populaar/index.html">Popular</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="https://facebook.com" target="_blank"><img src="../asset/facebook.png" alt="Facebook"/></a>
+                <a href="https://twitter.com" target="_blank"><img src="../asset/twitter.png" alt="Twitter"/></a>
+                <a href="https://instagram.com" target="_blank"><img src="../asset/instagram.png" alt="Instagram"/></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

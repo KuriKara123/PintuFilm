@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="resize()" style="background: linear-gradient(to bottom, rgba(0,0,0,0), transparent), url('../asset/avengersbanner.jpg');">
+    
+    <div class="header">
+        <nav>
+            <div id="res">
+                <div id="menuLogo">
+                    <img src="../asset/pintu.png" id="logo" alt="JetFlix Logo"/>
+                </div>
+        
+                <div id="navigate">
+                    <div>
+                        <a href="../movie/index.html" style="color: #000;">Movies</a>
+                        <div class="hover"></div>
+                    </div>
+                    <div>
+                        <a href="../populaar/index.html" style="color: #000;">News & Popular</a>
+                        <div class="hover"></div>
+                    </div>
+                    <div>
+                        <a href="../about/index.html" style="color: #000;">About Us</a>
+                        <div class="hover"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="center" id="profile">
+                <!-- Load profile picture from localStorage -->
+                <img src="../asset/defaultpp1.png" id="profileImage" onclick="location.href='../profile/index.html'"/>
+            </div>
+        </nav>
+    </div>
+
+    <section>
+        <img src="../asset/avengerstitle.png" alt="" style="width: 600px; height: 200px; position: absolute; left: 100px; top: 130px;">
+        <div class="content">
+            <div class="details">
+                <span>99% Match</span>
+                <span>3h 1m</span>
+                <span>13+</span>
+            </div>
+            <div class="button">
+                <span class="btn1">► Play</span>
+                <span class="btn2" onclick="openTrailer()">Trailer</span>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="trailer-popup" id="trailerPopup">
+        <div class="closeButton"><img src="../asset/close.png" onclick="closeTrailerPopup()"></div>
+        <div class="trailer-content">
+            <video controls src="../asset/avengerstrailer.mp4" width="500"></video>
+        </div>
+    </div>
+
+    <div class="sec">
+        <div class="info">
+            <span class="title">Scenes</span>
+            <span class="btn3">Show More</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="../asset/avengerscene1.jpeg" alt="">
+            </div>
+            <div class="col">
+                <img src="../asset/avengerscene2.jpeg" alt="">
+            </div>
+            <div class="col">
+                <img src="../asset/avengerscene3.jpeg" alt="">
+            </div>
+            <div class="col">
+                <img src="../asset/avengerscene4.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="col1 col">
+                <h2>Overview</h2>
+                <p>As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic 
+                    shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers 
+                    have fought for has led up to this moment, the fate of Earth and existence has never been more uncertain.</p>
+            </div>
+            <div class="col2 col">
+                <h2>Genres</h2>
+                <p>Popular Movies</p>
+                <p>Hollywood Movie</p>
+                <p>Action & Fantasy</p>
+            </div>
+        </div>
+        <div class="row3">
+            <h2>Cast</h2>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/avengercast1.jpeg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Robert Downey Jr.</h5>
+                    <h6>Tony Stark</h6>
+                </div>
+            </div>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/avengercast2.jpeg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Chris Hemsworth</h5>
+                    <h6>Thor</h6>
+                </div>
+            </div>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/avengercast3.jpeg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Chris Evans</h5>
+                    <h6>Captain America</h6>
+                </div>
+            </div>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/avengercast4.jpeg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Josh Brolin</h5>
+                    <h6>Thanos</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="../asset/pintu.png" alt="JetFlix Logo" class="footer-logo" />
+            <nav class="footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../movie/index.html">Movies</a>
+                <a href="../populaar/index.html">Popular</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="https://facebook.com" target="_blank"><img src="../asset/facebook.png" alt="Facebook"/></a>
+                <a href="https://twitter.com" target="_blank"><img src="../asset/twitter.png" alt="Twitter"/></a>
+                <a href="https://instagram.com" target="_blank"><img src="../asset/instagram.png" alt="Instagram"/></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

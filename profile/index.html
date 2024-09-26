@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="resize()">
+    
+    <nav>
+        <div id="res">
+            <div id="menuLogo">
+                <img src="../asset/pintu.png" id="logo" alt="JetFlix Logo"/>
+            </div>
+    
+            <div id="navigate">
+                <div>
+                    <a href="../movie/index.html">Movies</a>
+                    <div class="hover"></div>
+                </div>
+                <div>
+                    <a href="../populaar/index.html">News & Popular</a>
+                    <div class="hover"></div>
+                </div>
+                <div>
+                    <a href="../about/index.html">About Us</a>
+                    <div class="hover"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="center" id="profile">
+            <img src="../asset/defaultpp1.png" id="profileImage" alt="Profile"/>
+        </div>
+    </nav>
+
+    <main class="flex-container">
+        <div class="profile-update" id="profileBox">
+            <div class="profile-header">
+                <a href="#" class="change-background-link" id="changeBackgroundLink">Change Background</a>
+                <input type="file" id="backgroundInput" accept="image/*" style="display:none;">
+            </div>
+            <div class="profile-content">
+                <div class="profile-picture-wrapper">
+                    <img src="../asset/defaultpp1.png" id="profilePreview" alt="Profile Preview" class="profile-picture"/>
+                    <a href="#" class="change-picture-link" id="changePictureLink">Change Picture</a>
+                    <input type="file" id="profilePic" name="profilePic" accept="image/*" style="display:none;">
+                </div>
+                <div class="profile-details">
+                    <h2 id="profileName">Justin</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="watched-movies">
+            <h2>Watched Movies</h2>
+            <div class="movies">
+                <a href="../detail/inception.html">
+                    <img src="../asset/inceptionhistory.png" alt="Watched Movie 1" class="watched-movie">
+                </a>
+                <a href="../detail/yourname.html">
+                    <img src="../asset/yournamehistory.png" alt="Watched Movie 2" class="watched-movie">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="../asset/pintu.png" alt="JetFlix Logo" class="footer-logo"/>
+            <nav class="footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../movie/index.html">Movies</a>
+                <a href="../populaar/index.html">Popular</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="https://facebook.com" target="_blank"><img src="../asset/facebook.png" alt="Facebook"/></a>
+                <a href="https://twitter.com" target="_blank"><img src="../asset/twitter.png" alt="Twitter"/></a>
+                <a href="https://instagram.com" target="_blank"><img src="../asset/instagram.png" alt="Instagram"/></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

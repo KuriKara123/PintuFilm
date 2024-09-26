@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="resize()" style="background: linear-gradient(to bottom, rgba(0,0,0,0), transparent), url('../asset/inceptionbanner.jpg');">
+
+    
+    
+    <div class="header">
+        <nav>
+            <div id="res">
+                <div id="menuLogo">
+                    <img src="../asset/pintu.png" id="logo" alt="JetFlix Logo"/>
+                </div>
+        
+                <div id="navigate">
+                    <div>
+                        <a href="../movie/index.html">Movies</a>
+                        <div class="hover"></div>
+                    </div>
+                    <div>
+                        <a href="../populaar/index.html">News & Popular</a>
+                        <div class="hover"></div>
+                    </div>
+                    <div>
+                        <a href="../about/index.html">About Us</a>
+                        <div class="hover"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="center" id="profile">
+                <!-- Load profile picture from localStorage -->
+                <img src="../asset/defaultpp1.png" id="profileImage" onclick="location.href='../profile/index.html'"/>
+            </div>
+        </nav>
+    </div>
+
+    <section>
+        <img src="../asset/inceptions.png" alt="" style="width: 600px; height: 200px; position: absolute; left: 70px; top: 140px;">
+        <div class="content">
+            <div class="details">
+                <span>95% Match</span>
+                <span>1h 47m</span>
+                <span>18+</span>
+            </div>
+            <div class="button">
+                <span class="btn1">► Play</span>
+                <span class="btn2" onclick="openTrailer()">Trailer</span>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="trailer-popup" id="trailerPopup">
+        <div class="closeButton"><img src="../asset/close.png" onclick="closeTrailerPopup()"></div>
+        <div class="trailer-content">
+            <video controls src="../asset/inceptiontrailer.mp4" width="500"></video>
+        </div>
+    </div>
+
+    <div class="sec">
+        <div class="info">
+            <span class="title">Scenes</span>
+            <span class="btn3">Show More</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="../asset/inceptionscene1.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="../asset/inceptionscene2.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="../asset/inceptionscene3.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="../asset/inceptionscene4.jpg" alt="">
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col1 col">
+                <h2>Overview</h2>
+                <p>Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable. Cobb's rare ability has made him a coveted 
+                    player in this treacherous new world of corporate espionage, but it has also made him an international fugitive and cost him everything he has ever loved. Now Cobb is being offered a chance at redemption. One last job could give him his life back but only 
+                    if he can accomplish the impossible, inception. Instead of the perfect heist, Cobb and his team of specialists have to pull off the reverse: their task is not to steal an idea, but to plant one.</p>
+            </div>
+            <div class="col2 col">
+                <h2>Genres</h2>
+                <p>Movies Based on Novels</p>
+                <p>America's Movies</p>
+                <p>Action & Adventure</p>
+            </div>
+        </div>
+        <div class="row3">
+            <h2>Cast</h2>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/inceptioncrew1.jpg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Leonardo DiCaprio</h5>
+                    <h6>Cobb</h6>
+                </div>
+            </div>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/inceptioncrew2.jpg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Cillian Murphy</h5>
+                    <h6>Robert Fischer</h6>
+                </div>
+            </div>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/inceptioncrew3.jpg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Joseph Gordon</h5>
+                    <h6>Arthur</h6>
+                </div>
+            </div>
+            <div class="col1 col">
+                <div class="lb c1">
+                    <img src="../asset/inceptioncrew4.jpg" alt="" width="80px" height="80px" style="border-radius: 50%;">
+                </div>
+                <div class="rb c1">
+                    <h5>Elliot Page</h5>
+                    <h6>Ariadne</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="../asset/pintu.png" alt="JetFlix Logo" class="footer-logo" />
+            <nav class="footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../about/index.html">About</a>
+                <a href="../movie/index.html">Movies</a>
+                <a href="../populaar/index.html">Popular</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="https://facebook.com" target="_blank"><img src="../asset/facebook.png" alt="Facebook"/></a>
+                <a href="https://twitter.com" target="_blank"><img src="../asset/twitter.png" alt="Twitter"/></a>
+                <a href="https://instagram.com" target="_blank"><img src="../asset/instagram.png" alt="Instagram"/></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

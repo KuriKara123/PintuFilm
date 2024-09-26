@@ -1,0 +1,347 @@
+/* Existing CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#menuLogo img {
+    /* Adjust these values as needed to fit the new logo */
+    height: auto; /* maintains aspect ratio */
+    width: 150px; /* example width, adjust as needed */
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: hsl(0, 0%, 5%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: hsl(0, 0%, 5%);
+}
+
+#res {
+    flex: 1;
+    z-index: 1;
+    display: flex;
+}
+
+#menuLogo {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#menu {
+    display: block;
+    width: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#logo {
+    width: 10rem;
+}
+
+#navigate {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#navigate > div {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+#active {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+#navigate > div > .hover {
+    width: 0;
+    height: 2px;
+    transition: 0.5s;
+}
+
+#navigate > div:hover .hover {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+#profile {
+    padding: 0 1rem;
+}
+
+#profile img {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: white; /* Set all footer text to white */
+}
+
+.footer-logo {
+    max-width: 100px; /* Adjust the logo size, if needed */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    gap: 2rem; /* Spacing between links */
+    padding: 0; /* Removing any default padding */
+    list-style: none; /* Removing bullet points from nav items */
+    margin-bottom: 1rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white; /* Footer link color */
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    margin-top: 1rem; 
+}
+
+.footer-socials a {
+    display: inline-block;
+}
+
+.footer-socials img {
+    height: 24px; 
+    width: 24px;
+    vertical-align: middle; 
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: calc(100vh - 8rem); 
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+    gap: 2rem; 
+    box-sizing: border-box;
+}
+
+.profile-update {
+    background-color: hsl(0, 0%, 15%);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    height: 250px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.change-background-link {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-picture-wrapper {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.profile-picture {
+    max-width: 150px;
+    width: 100%;
+    height: 150px; 
+    border-radius: 50%; 
+    border: 2px solid hsl(0, 0%, 20%);
+    margin-left: 20px;
+}
+
+.change-picture-link {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-left: 20px;
+}
+
+.profile-details {
+    margin-left: 190px;
+    margin-top: 30px;
+}
+
+#profileName {
+    font-size: 2rem; 
+}
+
+.watched-movies {
+    background-color: hsl(0, 0%, 15%);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.movies {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 1rem;
+}
+
+.watched-movie {
+    max-width: 250px; 
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s; 
+}
+
+.watched-movie:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #navigate {
+        display: none;
+        flex-direction: column;
+    }
+
+    #profile {
+        margin-left: auto;
+    }
+
+    #navigate > div {
+        margin: 0;
+    }
+
+    #navigate > div > div {
+        display: none;
+    }
+
+    #detail {
+        flex-direction: column;
+    }
+
+    #poster {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .flex-container {
+        padding: 0 1rem;
+    }
+
+    .profile-update,
+    .watched-movies {
+        width: 100%;
+    }
+
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .profile-picture-wrapper {
+        left: 50%;
+        top: 30%;
+        transform: translateX(-50%) translateY(-60%);
+    }
+
+    .profile-details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #profileName {
+        margin-bottom: 1rem;
+    }
+
+    .movies {
+        justify-content: flex-start;
+        
+    }
+
+
+    #navigate a {
+        display: block;
+        width: calc(100% - 2rem);
+        margin: 0;
+        padding: 0.5rem 1rem;
+        background: none;
+    }
+
+    #navigate a:hover {
+        color: black;
+        background-color: white;
+    }
+}
